@@ -175,6 +175,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['save_profile'])) {
 
 <div class="content">
     <form method="POST">
+<<<<<<< HEAD
     <h2>User Profile</h2>
     
     <?php if (isset($_SESSION['success'])): ?>
@@ -202,6 +203,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['save_profile'])) {
     <button type="submit" name="save_profile">Save Changes</button>
 </form>
 
+=======
+        <h2>User Profile</h2>
+        
+        <?php if (isset($_SESSION['success'])): ?>
+            <div class="success-message"><?= htmlspecialchars($_SESSION['success']) ?></div>
+            <?php unset($_SESSION['success']); ?>
+        <?php endif; ?>
+
+        <?php if (isset($_SESSION['error'])): ?>
+            <div class="error-message"><?= htmlspecialchars($_SESSION['error']) ?></div>
+            <?php unset($_SESSION['error']); ?>
+        <?php endif; ?>
+
+        <input type="text" name="name" value="<?= htmlspecialchars($user['name']) ?>" required placeholder="Full Name">
+        <input type="email" name="email" value="<?= htmlspecialchars($user['email']) ?>" required placeholder="Email">
+        <input type="text" name="accessibility" value="<?= htmlspecialchars($user['accessibility_preferences']) ?>" placeholder="Accessibility Preferences">
+        <input type="password" name="password" placeholder="New Password"> <!-- New password field -->
+        <button type="submit" name="save_profile">Save Changes</button>
+    </form>
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 </div>
 
 <footer>

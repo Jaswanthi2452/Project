@@ -1,4 +1,8 @@
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 <?php
 
 // Set session timeout duration (in seconds)
@@ -28,8 +32,12 @@ $_SESSION['LAST_ACTIVITY'] = time();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Accessible Amusement Park</title>
     <link rel="stylesheet" href="styles.css"> <!-- External CSS file -->
+<<<<<<< HEAD
     
     <!-- Google Translate Script -->
+=======
+        <!-- Google Translate Script -->
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement(
@@ -40,6 +48,7 @@ $_SESSION['LAST_ACTIVITY'] = time();
     </script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+<<<<<<< HEAD
     <script>
         // Toggle navigation menu
         function toggleMenu() {
@@ -120,6 +129,10 @@ $_SESSION['LAST_ACTIVITY'] = time();
 </html>
 
 
+=======
+</head>
+
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 <style>
  /* Mobile Toggle Menu */
         .menu-toggle {
@@ -222,7 +235,11 @@ input[type="password"]:focus {
 button {
     width: 100%;
     padding: 12px;
+<<<<<<< HEAD
     /*background-color: #007bff;*/
+=======
+    background-color: #007bff;
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
     color: white;
     border: none;
     border-radius: 5px;
@@ -251,7 +268,83 @@ button {
 }
 
 button:hover {
+<<<<<<< HEAD
     /*background-color: #0056b3;
 }
 
 </style>
+=======
+    background-color: #0056b3;
+}
+
+
+</style>
+
+
+<script>
+        function toggleMenu() {
+            const navLinks = document.querySelector("nav ul");
+            navLinks.classList.toggle("show");
+        }
+    </script>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Accessible Amusement Park Logo" class="logo">
+            <h1>Welcome to the Accessible Amusement Park</h1>
+        </div>
+        <nav>
+    <!-- Navigation Menu -->
+    <span class="menu-toggle" onclick="toggleMenu()">☰</span> <!-- Toggle button -->
+    <ul>
+        <li><a href="index.php">Home</a></li>
+        
+        <!-- Google Translate Widget after Home link -->
+        <li>
+            <div id="google_translate_element"></div>
+        </li>
+        
+        <li><a href="directions.php">Park Direction</a></li>
+        <li><a href="admin.php">Admin</a></li>
+        <li><a href="register.php">Register</a></li>
+        <li><a href="login.php">Login</a></li>
+    </ul>
+</nav>
+    </header>
+    <main>
+        <section>
+            <h2>Login to Your Account</h2>
+
+            <!-- Display session message if available -->
+            <?php if (isset($_SESSION['login_message'])): ?>
+                <div class="message <?php echo $_SESSION['message_type']; ?>">
+                    <?php
+                    echo $_SESSION['login_message'];
+                    unset($_SESSION['login_message']); // Clear message after displaying
+                    unset($_SESSION['message_type']);
+                    ?>
+                </div>
+            <?php endif; ?>
+
+            <form action="process_login.php" method="POST">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+                <a href="register.php" class="register-link">Register</a> <!-- Register button -->
+            </form>
+
+            <!-- Forgot Password link -->
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Accessible Amusement Park. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f

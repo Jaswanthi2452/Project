@@ -1,5 +1,9 @@
 <?php 
 // Include admin header and database connection
+<<<<<<< HEAD
+=======
+include 'adminheader.php';
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 include 'db_connect.php';
 session_start(); // Start the session
 
@@ -21,7 +25,11 @@ if (isset($_GET['delete_id'])) {
     $stmt->close();
 }
 
+<<<<<<< HEAD
 // Fetch all feedbrds from the database
+=======
+// Fetch all feedback records from the database
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 $sql = "SELECT * FROM feedback";
 $result = $conn->query($sql);
 
@@ -114,8 +122,13 @@ if ($distribution_result->num_rows > 0) {
 
 <style>
     .btn-primary {
+<<<<<<< HEAD
          background-color: #0056b3; /* Darker blue for better contrast */
         color: #FFFFFF;
+=======
+        background-color: #007bff;
+        color: white;
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
         padding: 10px 20px;
         border: none;
         border-radius: 5px;
@@ -125,7 +138,11 @@ if ($distribution_result->num_rows > 0) {
     }
 
     .btn-primary:hover {
+<<<<<<< HEAD
        background-color: #00408d; /
+=======
+        background-color: #0056b3;
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
     }
 
     nav {
@@ -149,7 +166,11 @@ if ($distribution_result->num_rows > 0) {
 
     nav ul li a {
         text-decoration: none;
+<<<<<<< HEAD
       color: #000000; /* Darker green for improved readability */
+=======
+        color: #90EE90;
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
         padding: 10px 15px;
         font-size: 16px;
         font-weight: bold;
@@ -159,6 +180,7 @@ if ($distribution_result->num_rows > 0) {
     .custom-alert {
         margin-top: 10px;
         padding: 15px;
+<<<<<<< HEAD
         border: 1px solid #b33a3a; /* Darkened border color */
         background-color: #f8d7da; /* Light red background */
         color: #721c24; /* Darker red text for contrast */
@@ -189,6 +211,12 @@ th {
     color: #FFFFFF; /* White text for better contrast */
 }
 
+=======
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        color: #d9534f;
+    }
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 
     .custom-table {
         width: 100%;
@@ -230,8 +258,13 @@ th {
 
     .bar {
         width: 40px;
+<<<<<<< HEAD
         background-color: #0056b3; /* Darker blue */
         color: #FFFFFF;
+=======
+        background-color: #007bff;
+        color: #fff;
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
         font-size: 14px;
         display: flex;
         justify-content: center;
@@ -243,8 +276,13 @@ th {
     .label {
         margin-top: 5px;
         font-weight: bold;
+<<<<<<< HEAD
         color: #333333; /* Darker text color for readability */
     }
+=======
+    }
+
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
     @media (max-width: 768px) {
         .custom-table th, .custom-table td {
             display: block;

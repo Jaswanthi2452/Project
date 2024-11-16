@@ -8,6 +8,7 @@ session_start(); // Start the session
 $users_sql = "SELECT * FROM users";
 $users_result = $conn->query($users_sql);
 ?>
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en"> <!-- Set the language attribute -->
 <head>
@@ -59,6 +60,42 @@ $users_result = $conn->query($users_sql);
 
 
 
+=======
+
+<div class="container">
+    <h2>View Users</h2>
+    <button onclick="window.print()" class="btn btn-primary print-btn">Print Report</button> <!-- Print button -->
+
+    <div class="table-responsive">
+        <table class="table table-bordered custom-table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Accessibility Preferences</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php if ($users_result->num_rows > 0) {
+                    while ($user = $users_result->fetch_assoc()) {
+                        echo "<tr>";
+                        echo "<td data-label='ID'>" . $user['id'] . "</td>";
+                        echo "<td data-label='Name'>" . $user['name'] . "</td>";
+                        echo "<td data-label='Email'>" . $user['email'] . "</td>";
+                        echo "<td data-label='Accessibility Preferences'>" . $user['accessibility_preferences'] . "</td>";
+                        echo "</tr>";
+                    }
+                } else {
+                    echo "<tr><td colspan='4'>No users found.</td></tr>";
+                } ?>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<?php include 'footer.php'; $conn->close(); ?>
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 
 
 <style>
@@ -217,6 +254,7 @@ nav ul li {
 }
 
 nav ul li a {
+<<<<<<< HEAD
         text-decoration: none;
       color: #000000; /* Darker green for improved readability */
         padding: 10px 15px;
@@ -224,6 +262,15 @@ nav ul li a {
         font-weight: bold;
         transition: background-color 0.3s ease;
     }
+=======
+    text-decoration: none;
+    color: #90EE90;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 
 nav ul li a:hover {
     background-color: rgba(0, 123, 255, 0.1);
@@ -248,6 +295,7 @@ nav ul li a:hover {
     nav ul li a {
         padding: 8px 12px;
         font-size: 14px;
+<<<<<<< HEAD
 
     }
 }
@@ -277,6 +325,10 @@ nav ul li a:hover {
     text-align: center;
 }
 
+=======
+    }
+}
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 
 </style>
   

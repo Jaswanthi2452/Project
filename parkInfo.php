@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 <!DOCTYPE html>   
+=======
+<!DOCTYPE html> 
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Park Information</title>
     <style>
+<<<<<<< HEAD
         /* Optional: Add basic styling for the ride cards */
         .rides-grid {
             display: flex;
@@ -71,6 +76,8 @@
 </html>
 
 <style>
+=======
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
        body { 
     display: flex;
     justify-content: center; /* Centers the main content horizontally */
@@ -105,16 +112,24 @@ main {
     width: 200px; /* Fixed width for the cards */
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); /* Shadow for ride cards */
 }
+<<<<<<< HEAD
 h2 {
     color: #1E3A8A; /* Dark Blue */
 }
+=======
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 
 .more-info-btn {
     display: inline-block; /* Inline button */
     margin-top: 10px; /* Space above the button */
     padding: 10px 15px; /* Button padding */
+<<<<<<< HEAD
      background-color: #2c7a7b; /* Dark Green */
     color: #ffffff; / /* Button text color */
+=======
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
     text-decoration: none; /* Removes underline */
     border-radius: 4px; /* Rounded corners */
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Shadow for button */
@@ -142,4 +157,52 @@ h2 {
     }
 }
 
+<<<<<<< HEAD
     </style>
+=======
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Enjoyable Rides & Services</h1>
+        <div class="rides-grid">
+            <!-- Ride 1 -->
+            <div class="ride-card">
+                <div class="ride-info">
+                    <h2>Rollercoaster</h2>
+                    <p>Experience the thrill of speed and excitement. A perfect choice for adrenaline seekers!</p>
+                    <a class="more-info-btn" href="rollercoaster.php">More Info</a>
+                </div>
+            </div>
+
+            <!-- Ride 2 -->
+            <div class="ride-card">
+                <div class="ride-info">
+                    <h2>Water Park</h2>
+                    <p>Cool off and splash around in our state-of-the-art water park, suitable for all ages.</p>
+                    <a class="more-info-btn" href="water_park.php">More Info</a>
+                </div>
+            </div>
+
+            <!-- Ride 3 -->
+            <div class="ride-card">
+                <div class="ride-info">
+                    <h2>Ferris Wheel</h2>
+                    <p>Take in breathtaking views of the entire park from the top of our giant Ferris Wheel.</p>
+                    <a class="more-info-btn" href="ferris_wheel.php">More Info</a>
+                </div>
+            </div>
+
+            <!-- Ride 4 -->
+            <div class="ride-card">
+                <div class="ride-info">
+                    <h2>Bumper Cars</h2>
+                    <p>Fun for everyone! Drive around and bump into friends in our classic bumper car arena.</p>
+                    <a class="more-info-btn" href="bumper_cars.php">More Info</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f

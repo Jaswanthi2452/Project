@@ -23,7 +23,11 @@ if (isset($_SESSION['error'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amusement Park Feedback Form</title>
     <style type="styles.css"></style>
+<<<<<<< HEAD
  <style>
+=======
+    <style>
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
       body { 
     font-family: Arial, sans-serif;
     margin: 0;
@@ -91,6 +95,7 @@ select {
 }
 
 select {
+<<<<<<< HEAD
             background-color: #ffffff;
             color: #000000; /* Ensure text inside inputs has high contrast */
             border: 1px solid #333;
@@ -99,6 +104,11 @@ select {
             width: 100%;
             font-size: 16px;
         }
+=======
+    appearance: none;
+    background-color: white;
+}
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 
 /* Basic styling for form container */
 .form-container {
@@ -138,8 +148,14 @@ textarea {
 .login-btn { 
     padding: 10px;
     font-size: 16px; /* Increased font size for better readability */
+<<<<<<< HEAD
    background-color: #0066cc; /* Use a color with high contrast */
     color: #ffffff; /* White text for high contrast */
+=======
+    color: white;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -199,13 +215,17 @@ textarea {
 }
 
     </style>
+<<<<<<< HEAD
 
+=======
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 </head>
 <body>
 
     <div class="container">
         <h2>Share Your Feedback</h2>
         <form action="process_feedback.php" method="POST">
+<<<<<<< HEAD
     <!-- Name -->
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required placeholder="Enter your name">
@@ -246,6 +266,38 @@ textarea {
 
 
         
+=======
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <!-- Date of Visit -->
+            <label for="date">Date of Visit:</label>
+            <input type="date" id="date" name="date" required>
+
+            <!-- Feedback Comments -->
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" required placeholder="Share your thoughts..."></textarea>
+
+            <!-- Rating -->
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+                <option value="">-- Select Rating --</option>
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Good</option>
+                <option value="3">3 - Average</option>
+                <option value="2">2 - Poor</option>
+                <option value="1">1 - Terrible</option>
+            </select>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
     </div>
 
 </body>

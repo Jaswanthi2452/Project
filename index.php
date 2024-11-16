@@ -16,6 +16,7 @@
         }
     </script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<<<<<<< HEAD
     </style>
 </head>
 <body>
@@ -73,12 +74,25 @@
 
 <style>
 
+=======
+
+    <style>
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
         /* Basic Reset */
         body, h1, h2, p {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
         }
+<<<<<<< HEAD
+=======
+        /* Limit the height of the translate dropdown */
+.goog-te-menu2 {
+    max-height: 200px; /* Adjust this value as needed */
+    overflow-y: auto;
+}
+
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 
         .logo-container {
             display: flex;
@@ -166,6 +180,7 @@
     border-radius: 10px;
     object-fit: cover;
 }
+<<<<<<< HEAD
 
 /* Footer styling */
 footer {
@@ -177,6 +192,8 @@ footer {
     padding: 15px 0;
 }
 
+=======
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 /* Horizontal layout for mobile view */
 @media (max-width: 768px) {
     .flex-container {
@@ -223,6 +240,10 @@ footer {
             font-size: 24px;
             cursor: pointer;
         }
+<<<<<<< HEAD
+=======
+        
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
        
          body, html {
             margin: 0;
@@ -303,16 +324,27 @@ footer {
     margin-bottom: 25px;
     line-height: 1.6;
 }
+<<<<<<< HEAD
 .get-started-btn {
     display: inline-block;
     background-color: #0056b3; /* Darker blue for better contrast */
+=======
+
+.get-started-btn {
+    display: inline-block;
+    background-color: #007bff;
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
     color: white;
     padding: 12px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1.2em;
 }
+<<<<<<< HEAD
 .
+=======
+
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 /* Center button in mobile view */
 @media (max-width: 768px) {
     .text-container {
@@ -344,4 +376,61 @@ footer {
     width: 100%;
     text-align: center;
     padding: 15px 0;
+<<<<<<< HEAD
 }
+=======
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Accessible Amusement Park Logo" class="logo">
+            <h1>Welcome to the Accessible Amusement Park</h1>
+        </div>
+        <nav>
+    <!-- Navigation Menu -->
+    <span class="menu-toggle" onclick="toggleMenu()">☰</span> <!-- Toggle button -->
+    <ul>
+        <li><a href="index.php">Home</a></li>
+        
+        <!-- Google Translate Widget after Home link -->
+        <li>
+            <div id="google_translate_element"></div>
+        </li>
+        
+        <li><a href="directions.php">Park Direction</a></li>
+        <li><a href="admin.php">Admin</a></li>
+        <li><a href="register.php">Register</a></li>
+        <li><a href="login.php">Login</a></li>
+    </ul>
+</nav>
+
+    </header>
+    <main>
+        <section id="welcome" class="flex-container">
+            <div class="text-container">
+                <h2>Experience the Park for Everyone</h2>
+                <p>We provide a fully accessible amusement park experience for all guests, including those with disabilities. Join us and enjoy your visit!</p>
+                <a href="register.php" class="btn get-started-btn">Get Started</a>
+            </div>
+            <div class="image-container">
+                <img src="images/1.jpeg" alt="Amusement Park" />
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Accessible Amusement Park. All rights reserved.</p>
+    </footer>
+
+    <script>
+    function toggleMenu() {
+        const navLinks = document.querySelector("nav ul");
+        navLinks.classList.toggle("show");
+    }
+</script>
+</body>
+</html>
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f

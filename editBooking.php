@@ -63,6 +63,7 @@ if (isset($_GET['id'])) {
 <?php endif; ?>
 
 <form method="POST">
+<<<<<<< HEAD
     <label for="first_name">First Name:</label>
     <input type="text" id="first_name" name="first_name" value="<?= htmlspecialchars($booking['first_name']) ?>" required placeholder="First Name">
 
@@ -70,6 +71,11 @@ if (isset($_GET['id'])) {
     <input type="email" id="email" name="email" value="<?= htmlspecialchars($booking['email']) ?>" required placeholder="Email">
     
     <label for="ride_service">Ride Service:</label>
+=======
+    <input type="text" name="first_name" value="<?= htmlspecialchars($booking['first_name']) ?>" required placeholder="First Name">
+    <input type="email" name="email" value="<?= htmlspecialchars($booking['email']) ?>" required placeholder="Email">
+    
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
     <select id="ride_service" name="ride_service" required>
         <option value="">-- Select an Option --</option>
         <option value="Rollercoaster" <?= $booking['ride_service'] == "Rollercoaster" ? 'selected' : '' ?>>Rollercoaster</option>
@@ -81,7 +87,10 @@ if (isset($_GET['id'])) {
     <button type="submit" name="save_booking">Save Booking</button>
 </form>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 <?php include 'footer.php'; ?>
 </body>
 </html>
@@ -89,6 +98,9 @@ if (isset($_GET['id'])) {
 <?php
 ob_end_flush();
 ?>
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f

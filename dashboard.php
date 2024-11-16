@@ -6,6 +6,7 @@
     <title>Accessible Amusement Park</title>
     <link rel="stylesheet" href="styles.css">
     <script>
+<<<<<<< HEAD
     // JavaScript function to load content based on button clicked
     function loadContent(page) {
         const contentSection = document.getElementById('contentSection');
@@ -77,6 +78,54 @@
 
 </script>
 
+=======
+        // JavaScript function to load content based on button clicked
+        function loadContent(page) {
+            const contentSection = document.getElementById('contentSection');
+            const dashboard = document.querySelector('.dashboard');
+
+            // Hide the dashboard on mobile view
+            if (window.innerWidth <= 768) {
+                dashboard.style.display = 'none';
+            }
+
+            // Smooth scroll to content section
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', page + '.php', true);
+            xhr.onload = function() {
+                if (this.status == 200) {
+                    contentSection.innerHTML = `
+                        <div class="dynamic-content">
+                            ${this.responseText}
+                        </div>
+                    `;
+                } else {
+                    contentSection.innerHTML = '<p>Error loading content. Please try again.</p>';
+                }
+            };
+            xhr.send();
+        }
+
+        // Google Translate Initialization
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+                'google_translate_element'
+            );
+        }
+
+        // Function to toggle the visibility of the menu
+        function toggleMenu() {
+            const navLinks = document.querySelector("nav ul");
+            navLinks.classList.toggle("show");
+        }
+    </script>
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 </head>
 <body>
 
@@ -89,10 +138,16 @@
         <nav>
              <span class="menu-toggle" onclick="toggleMenu()">☰</span>
             <ul>
+<<<<<<< HEAD
                 <li>
             <div id="google_translate_element"></div>
         </li>
         
+=======
+             <li>
+            <div id="google_translate_element"></div>
+        </li>
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
                 <li><a href="dashboard.php">Dashboard</a></li>
                 <li><a href="logout.php">Log Out</a></li>
                 <li class="profile-icon">
@@ -144,8 +199,12 @@
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     
 </body>
+<<<<<<< HEAD
 
 
+=======
+</html>
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 <style>
         /* General styles */
         body {
@@ -166,6 +225,7 @@
             font-size: 24px;
             cursor: pointer;
         }
+<<<<<<< HEAD
       header {
     position: fixed;
     top: 0;
@@ -182,6 +242,9 @@ body {
     padding-top: 80px; /* Adjust this value based on your header height */
 }
 
+=======
+       
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
         header { 
     position: fixed;
     top: 0;
@@ -211,10 +274,16 @@ body {
 }
 
 h1 {
+<<<<<<< HEAD
             color: #000000; /* Foreground: Black */
            /* Background: White */
             
         }
+=======
+    font-size: 1.2em;
+    margin: 0;
+}
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 
         .dashboard {
             width: 150px; /* Fixed width */
@@ -272,8 +341,12 @@ h1 {
             padding: 10px; /* Padding for buttons */
             font-size: 16px; /* Increase font size for readability */
             background-color: #007BFF; /* Button color */
+<<<<<<< HEAD
        
             color: #000000;  /* Button text color */
+=======
+            color: white; /* Button text color */
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
             border: none; /* Remove default button border */
             border-radius: 5px; /* Rounded corners for buttons */
             cursor: pointer; /* Pointer cursor on hover */
@@ -392,7 +465,11 @@ nav ul li {
 /* Link styling */
 nav ul li a {
     text-decoration: none;
+<<<<<<< HEAD
    color: #000000; 
+=======
+    color: #90EE90;
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
     padding: 10px 15px;
     font-size: 16px;
     font-weight: bold;
@@ -455,7 +532,11 @@ nav ul li a {
 /* User label styling */
 .user-label {
     font-size: 16px;
+<<<<<<< HEAD
      color: #000000; 
+=======
+    color: #90EE90;
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 }
 
         /* Responsive styling for mobile screens */
@@ -546,4 +627,254 @@ nav ul li a {
             }
         }
         /* Flexbox styling */
+<<<<<<< HEAD
+=======
+        logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 5px 15px; /* Reduced padding to make header thinner */
+        }
+
+        .logo {
+            width: 50px; /* Adjust size as needed */
+            height: auto;
+            margin-right: 8px; /* Space between logo and text */
+        }
+
+        h1 {
+            font-size: 1.2rem; /* Adjust font size for a compact look */
+            margin: 0;
+            color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        nav ul li {
+            margin: 0 10px; /* Reduced space between nav items */
+        }
+
+        main {
+            padding: 20px;
+            display: flex;              
+            justify-content: flex-start;
+            margin-top: 100px;
+            background-color: #f4f4f9;
+        }
+
+        /* Flexbox styling */
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text-container h2 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.text-container p {
+    font-size: 1.5em;
+    color: #34495e;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.get-started-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+/* Horizontal layout for mobile view */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px; /* Optional gap for spacing */
+    }
+
+    .text-container {
+        padding-right: 10px; /* Adjust padding for mobile view */
+        text-align: center;
+    }
+}
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .flex-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .text-container {
+                padding-right: 0;
+                padding-bottom: 20px;
+            }
+
+            .text-container h2 {
+                font-size: 2em;
+            }
+
+            .text-container p {
+                font-size: 1.2em;
+            }
+
+            .image-container {
+                width: 100%;
+            }
+        }
+         /* Mobile Toggle Menu */
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+       
+         body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main container styles */
+        main {
+            flex: 1; /* Allows main content to grow and push the footer down */
+        }
+
+        /* Navigation styling */
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 8px;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Mobile Toggle Menu */
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            display: flex;
+        }
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            
+            nav ul {
+                display: none;
+                flex-direction: column;
+               
+                padding: 15px;
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+        }
+        /* Flexbox styling */
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text-container h2 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.text-container p {
+    font-size: 1.5em;
+    color: #34495e;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.get-started-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+/* Center button in mobile view */
+@media (max-width: 768px) {
+    .text-container {
+        text-align: center; /* Center-aligns text and button */
+        padding-right: 0;
+    }
+
+    .get-started-btn {
+        margin-top: 15px; /* Optional spacing above button */
+    }
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
     </style>

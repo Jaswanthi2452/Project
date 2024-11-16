@@ -60,6 +60,7 @@
             text-decoration: none;
             transition: transform 0.3s ease;
         }
+<<<<<<< HEAD
 /* Social Media Colors with Improved Contrast */
 .facebook { 
     background-color: #2e4a87; /* Darkened Facebook color for higher contrast */
@@ -84,6 +85,13 @@
     display: inline-block;
     text-align: center;
 }
+=======
+
+        /* Social Media Colors */
+        .facebook { background-color: #3b5998; }
+        .twitter { background-color: #1da1f2; }
+        .instagram { background-color: #e1306c; }
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 
         /* Hover Effect */
         .social-button:hover {

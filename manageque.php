@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?php  
+=======
+<?php 
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 // Start the session
 session_start();
 
@@ -19,6 +23,7 @@ $queue = $conn->query($sql);
     <meta charset="UTF-8">
     <title>Admin - Virtual Queue Management</title>
     <style>
+<<<<<<< HEAD
         table {
             width: 100%;
             border-collapse: collapse;
@@ -31,6 +36,14 @@ $queue = $conn->query($sql);
         th {
             background-color: ;
         }
+=======
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #333; padding: 10px; text-align: center; }
+        th { background-color: #0B244D; color: white; }
+        .btn { padding: 5px 10px; cursor: pointer; border: none; }
+        .btn-update { background-color: #28a745; color: white; }
+        .btn-delete { background-color: #dc3545; color: white; }
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
     </style>
     <script>
         function confirmDelete() {
@@ -55,10 +68,15 @@ $queue = $conn->query($sql);
                 <th>Position</th>
                 <th>Status</th>
                 <th>Update Status</th>
+<<<<<<< HEAD
+=======
+                <th>Update</th>
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
                 <th>Delete</th>
             </tr>
         </thead>
         <tbody>
+<<<<<<< HEAD
         <?php while ($row = $queue->fetch_assoc()): ?>
         <tr>
             <td><?php echo $row['queue_id']; ?></td>
@@ -86,12 +104,37 @@ $queue = $conn->query($sql);
             </td>
         </tr>
         <?php endwhile; ?>
+=======
+            <?php while ($row = $queue->fetch_assoc()): ?>
+                <tr>
+                    <td><?php echo $row['queue_id']; ?></td>
+                    <td><?php echo htmlspecialchars($row['ride_name']); ?></td>
+                    <td><?php echo htmlspecialchars($row['user_name']); ?></td>
+                    <td><?php echo $row['queue_position']; ?></td>
+                    <td><?php echo htmlspecialchars($row['status']); ?></td>
+                    <td>
+                        <select onchange="window.location.href='adminQueueActions.php?action=update&queue_id=<?php echo $row['queue_id']; ?>&new_status=' + this.value;">
+                            <option value="waiting" <?php if ($row['status'] === 'waiting') echo 'selected'; ?>>Waiting</option>
+                            <option value="near" <?php if ($row['status'] === 'near') echo 'selected'; ?>>Near</option>
+                            <option value="active" <?php if ($row['status'] === 'active') echo 'selected'; ?>>Active</option>
+                        </select>
+                    </td>
+                    <td>
+                        <a href="adminQueueActions.php?action=update&queue_id=<?php echo $row['queue_id']; ?>&new_status=active" class="btn btn-update">Update</a>
+                    </td>
+                    <td>
+                        <a href="adminQueueActions.php?action=delete&queue_id=<?php echo $row['queue_id']; ?>" class="btn btn-delete" onclick="return confirmDelete();">Delete</a>
+                    </td>
+                </tr>
+            <?php endwhile; ?>
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
         </tbody>
     </table>
 </body>
 </html>
 <?php $conn->close(); ?>
 
+<<<<<<< HEAD
 <style>
      body {
     font-family: Arial, sans-serif;
@@ -185,3 +228,5 @@ form {
 
 
 
+=======
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f

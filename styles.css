@@ -16,6 +16,7 @@ body {
 
 /* Header */
 header {
+<<<<<<< HEAD
     background-color: #2194f3;
     padding: 1px 0;
     color: white;
@@ -28,6 +29,18 @@ header {
     z-index: 1000; /* Ensures it stays above other content */
 
 }
+=======
+    background-color: #0163F6;
+    padding: 21px 0;
+    color: white;
+    text-align: center;
+    position: fixed; /* Fixes the header at the top */
+    top: 10px; /* Pushes the header down a bit from the top of the page */
+    width: 100%; /* Ensures the header spans the full width */
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 #welcome {
     margin: 20px; /* Adds space around the section so it doesn't touch the edges */
     max-width: 900px;
@@ -58,6 +71,7 @@ nav ul li {
     margin: 0 10px;
     margin-left: 20px; 
 }
+<<<<<<< HEAD
 /* Style for navigation links */
 nav ul li a {
     color: #000000; /* Example: Darker text for better contrast */
@@ -74,6 +88,16 @@ nav ul li a:focus {
 }
 
 
+=======
+
+nav ul li a {
+    text-decoration: none; /* Remove default underline */
+    padding: 15px 20px; /* Adjust padding */
+    position: relative; /* Required for the underline effect */
+    color: #90EE90; /* Text color */
+}
+
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 nav ul li a:hover::after,  /* Hover state */
 nav ul li a:focus::after,  /* Focus state */
 nav ul li a:active::after { /* Active state */
@@ -83,7 +107,11 @@ nav ul li a:active::after { /* Active state */
     right: 0;
     bottom: -2px; /* Position the line below the text */
     height: 2px; /* Thickness of the underline */
+<<<<<<< HEAD
     /*background-color: #000; /* Color of the underline */
+=======
+    background-color: #000; /* Color of the underline */
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
     transition: width 0.3s ease-in-out; /* Smooth transition for the line */
     width: 100%; /* Full-width underline */
 }
@@ -116,6 +144,10 @@ nav ul li:first-child {
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 section {
     max-width: 600px;
     margin: 0 auto;
@@ -124,6 +156,10 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 18px;
     margin-top: 300px
+<<<<<<< HEAD
+=======
+
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 }
 
 /* Forms */
@@ -145,14 +181,22 @@ form input {
 button {
     width: 80%;
     padding: 15px;
+<<<<<<< HEAD
     /*background-color: #0066cc;*/
+=======
+    background-color: #0066cc;
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
     color: white;
     border: none;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
     padding: 10px 20px;
+<<<<<<< HEAD
     /*background-color: #007bff; /* Blue for register */
+=======
+    background-color: #007bff; /* Blue for register */
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
     color: white;
     border: none;
     border-radius: 4px;
@@ -163,7 +207,11 @@ button {
 
 /*hover effect missing on the button */
 button:hover {
+<<<<<<< HEAD
     /*background-color: #004999;*/
+=======
+    background-color: #004999;
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 }
 
 .flex-container {
@@ -260,14 +308,22 @@ button:hover {
 /* Styling the form buttons */
 
 button:hover {
+<<<<<<< HEAD
     /*background-color: #0056b3; /* Darker blue on hover */
+=======
+    background-color: #0056b3; /* Darker blue on hover */
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 }
 
 
 /* Styling the login link as a button */
 .login-button {
     padding: 10px 20px;
+<<<<<<< HEAD
     /*background-color: #28a745; /* Green for login */
+=======
+    background-color: #28a745; /* Green for login */
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
     color: white;
     text-decoration: none;
     border-radius: 4px;
@@ -316,6 +372,40 @@ button:hover {
     text-align: left;
 }
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 /* Form container styling */
 form {
     background-color: #E1E5F6; /* Light background for contrast */
@@ -378,7 +468,11 @@ form button[type="submit"] {
     font-size: 1.5em;
     padding: 10px 20px;
     color: #fff;
+<<<<<<< HEAD
     /*background-color: #2ecc71; /* Green for the register button */
+=======
+    background-color: #2ecc71; /* Green for the register button */
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
     border: none;
     border-radius: 8px;
     text-decoration: none;

@@ -8,6 +8,7 @@ session_start(); // Start the session
 $bookings_sql = "SELECT id, first_name, email, ride_service, user_id FROM bookings";
 $bookings_result = $conn->query($bookings_sql);
 ?>
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en"> <!-- Added the language attribute -->
 <head>
@@ -55,6 +56,44 @@ $bookings_result = $conn->query($bookings_sql);
 </body>
 </html>
 
+=======
+
+<div class="container">
+    <h2>View Bookings</h2>
+    <button onclick="window.print()" class="btn btn-primary print-btn">Print Report</button> <!-- Print button -->
+
+    <div class="table-responsive">
+        <table class="table table-bordered custom-table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Email</th>
+                    <th>Ride Service</th>
+                    <th>User ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php if ($bookings_result->num_rows > 0) {
+                    while ($booking = $bookings_result->fetch_assoc()) {
+                        echo "<tr>";
+                        echo "<td data-label='ID'>" . $booking['id'] . "</td>";
+                        echo "<td data-label='First Name'>" . $booking['first_name'] . "</td>";
+                        echo "<td data-label='Email'>" . $booking['email'] . "</td>";
+                        echo "<td data-label='Ride Service'>" . $booking['ride_service'] . "</td>";
+                        echo "<td data-label='User ID'>" . $booking['user_id'] . "</td>";
+                        echo "</tr>";
+                    }
+                } else {
+                    echo "<tr><td colspan='5'>No bookings found.</td></tr>";
+                } ?>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<?php include 'footer.php'; $conn->close(); ?>
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 
 <style>
 /* Container and typography */
@@ -212,6 +251,7 @@ nav ul li {
 }
 
 nav ul li a {
+<<<<<<< HEAD
         text-decoration: none;
       color: #000000; /* Darker green for improved readability */
         padding: 10px 15px;
@@ -219,6 +259,15 @@ nav ul li a {
         font-weight: bold;
         transition: background-color 0.3s ease;
     }
+=======
+    text-decoration: none;
+    color: #90EE90;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 
 nav ul li a:hover {
     background-color: rgba(0, 123, 255, 0.1);
@@ -243,6 +292,7 @@ nav ul li a:hover {
     nav ul li a {
         padding: 8px 12px;
         font-size: 14px;
+<<<<<<< HEAD
 
     }
 }
@@ -276,4 +326,10 @@ nav ul li a:hover {
 </style>
   
 
+=======
+    }
+}
+
+</style>
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
   

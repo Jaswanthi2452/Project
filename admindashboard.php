@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Management Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+<<<<<<< HEAD
       <script>
+=======
+    <script>
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
         // JavaScript function to load content based on button clicked
         function loadContent(page) {
             const contentSection = document.getElementById('contentSection');
@@ -41,14 +45,19 @@
             xhr.send();
         }
     </script>
+<<<<<<< HEAD
 </script>
    <style>
+=======
+    <style>
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
         /* General styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
+<<<<<<< HEAD
         #google_translate_element {
     font-size: 8px;  /* Adjust the font size */
     padding: 5px;     /* Adjust the padding to reduce the space around the element */
@@ -110,6 +119,66 @@ h1 {
     font-size: 1.2em;
     margin: 0;
 }
+=======
+        nav {
+    /* Ensure the navigation takes up full width */
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+     /* Optional: Add a background color */
+    padding: 5px; /* Add padding for spacing */
+}
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #0163F6;
+            color: white;
+            padding: 10px 20px;
+            z-index: 1000; /* Ensure the header is above other content */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+    padding: 1px 0;
+    color: white;
+    text-align: center;
+    color: white;
+    text-align: center;
+    position: fixed; /* Fixes the header at the top */
+    top: 10; /* Positions it at the top of the page */
+    width: 100%; /* Ensures the header spans the full width */
+    z-index: 1000; /* Ensures it stays above other content */
+
+        }
+
+        /* Add responsiveness */
+        @media (max-width: 600px) {
+            header {
+                padding: 10px; /* Reduce padding for smaller screens */
+                flex-direction: column; /* Stack items vertically */
+                align-items: flex-start; /* Align items to the start */
+            }
+
+            .logo {
+                margin-bottom: 10px; /* Space below the logo */
+            }
+
+            .nav-links {
+                width: 100%; /* Make navigation links full-width */
+                display: flex; /* Use flex for horizontal alignment */
+                justify-content: space-between; /* Space links evenly */
+                flex-wrap: wrap; /* Wrap links if needed */
+            }
+
+            .nav-link {
+                flex: 1 1 auto; /* Allow links to grow/shrink */
+                text-align: center; /* Center links */
+                padding: 5px 0; /* Add vertical padding to links */
+            }
+        }
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 
         .dashboard {
             width: 150px; /* Fixed width */
@@ -167,16 +236,28 @@ h1 {
             padding: 10px; /* Padding for buttons */
             font-size: 16px; /* Increase font size for readability */
             background-color: #007BFF; /* Button color */
+<<<<<<< HEAD
        
             color: #000000;  /* Button text color */
+=======
+            color: white; /* Button text color */
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
             border: none; /* Remove default button border */
             border-radius: 5px; /* Rounded corners for buttons */
             cursor: pointer; /* Pointer cursor on hover */
             margin-top: 10px; /* Add margin above each button */
         }
+<<<<<<< HEAD
         .dashboard button:hover {
             background-color: #0056b3; /* Darker blue on hover */
         }
+=======
+
+        .dashboard button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
         /* Responsive styles */
         @media (max-width: 768px) {
             header {
@@ -228,6 +309,7 @@ h1 {
                 padding-top: 60px; /* Adjust padding for small screens */
             }
         }
+<<<<<<< HEAD
 
                 /* Header styling */
         /* Header styling */
@@ -443,6 +525,9 @@ nav ul li a {
         /* Flexbox styling */
     </style>
 
+=======
+    </style>
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 </head>
 <body>
     <?php include 'adminheader.php'; ?> <!-- Include the header -->

@@ -27,6 +27,7 @@
         padding: 0;
     }
 
+<<<<<<< HEAD
 /* Ensure high contrast for links */
 a[href$="dashboard.php"] {
     color: #003366; /* Dark blue text color */
@@ -39,6 +40,8 @@ a[href$="dashboard.php"]:hover {
     color: #ffffff; /* White text on hover */
     background-color: #0056b3; /* Darker blue background on hover */
 }
+=======
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 
         /* Logo container styling */
         .logo-container {
@@ -77,7 +80,11 @@ a[href$="dashboard.php"]:hover {
 
         nav ul li a {
             text-decoration: none;
+<<<<<<< HEAD
             color: #ffffff;
+=======
+            color: #90EE90;
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
             padding: 5px 10px; /* Reduced padding */
             font-size: 14px; /* Smaller font size */
             font-weight: bold;

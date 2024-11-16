@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?php 
+=======
+<?php
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 // Start the session
 session_start();
 ?>
@@ -10,7 +14,12 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - Accessible Amusement Park</title>
     <link rel="stylesheet" href="styles.css">
+<<<<<<< HEAD
     
+=======
+        
+        <!-- Google Translate Script -->
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
     <!-- Google Translate Script -->
     <script type="text/javascript">
         function googleTranslateElementInit() {
@@ -23,6 +32,7 @@ session_start();
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </head>
+<<<<<<< HEAD
 
 <body>
     <header>
@@ -99,6 +109,8 @@ session_start();
 </body>
 </html>
 
+=======
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 <style>
     
 
@@ -189,4 +201,79 @@ button:hover {
             }
         }
 
+<<<<<<< HEAD
     </style>
+=======
+    </style>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Accessible Amusement Park Logo" class="logo">
+            <h1>Welcome to the Accessible Amusement Park</h1>
+        </div>
+             <nav>
+    <!-- Navigation Menu -->
+    <span class="menu-toggle" onclick="toggleMenu()">☰</span> <!-- Toggle button -->
+    <ul>
+        <li><a href="index.php">Home</a></li>
+        
+        <!-- Google Translate Widget after Home link -->
+        <li>
+            <div id="google_translate_element"></div>
+        </li>
+        
+        <li><a href="directions.php">Park Direction</a></li>
+        <li><a href="admin.php">Admin</a></li>
+        <li><a href="register.php">Register</a></li>
+        <li><a href="login.php">Login</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Create Your Account</h2>
+
+            <!-- Display success message if session contains one -->
+            <?php if (isset($_SESSION['success_message'])): ?>
+                <div class="success-message">
+                    <?php
+                    echo $_SESSION['success_message'];
+                    unset($_SESSION['success_message']); // Remove message after displaying
+                    ?>
+                </div>
+            <?php endif; ?>
+
+            <form action="process_register.php" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="accessibility">Accessibility Preferences:</label>
+                <input type="text" id="accessibility" name="accessibility">
+
+                <button type="submit">Register</button>
+                 <p class="login-li">Already have an account? <a href="login.php">Login here</a></p>
+            
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Accessible Amusement Park. All rights reserved.</p>
+    </footer>
+        <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector("nav ul");
+            navLinks.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f

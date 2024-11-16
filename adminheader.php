@@ -32,17 +32,23 @@ nav ul li a {
     text-decoration: none;
     padding: 8px 12px;
     font-size: 16px;
+<<<<<<< HEAD
     color: #000000; 
+=======
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
+<<<<<<< HEAD
 h1 {
     color: #e6e6e6; /* Lighter gray text */
     background-color: #1a74d9; /* Darker blue background */
     font-size: 18px;
     font-weight: bold;
 }
+=======
+>>>>>>> e973fa6f87a6e009d59fe5fa0e84a7d79811430f
 
 /* Responsive adjustments */
 nav ul {
